@@ -5,7 +5,7 @@ body {
 }
 h1 {
   color            : #333333;
-  font-size        : 25px;
+  font-size        : 26px;
   margin    : 0;
 }
 p{
@@ -58,7 +58,7 @@ iframe {
 /* ここからタイマー用 */
 .float-buttons {
   position         : absolute;
-  top              : 463px;
+  top              : 460px;
   left             : 158px;
   flex-direction   : column;
   gap              : 10px;
