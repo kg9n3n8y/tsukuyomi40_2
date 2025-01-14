@@ -17,6 +17,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="mobile-web-app-capable" content="yes">
     <title>月読40(読札)</title>
+    <link rel="manifest" href="manifest.json"/>
     <link rel="shortcut icon" type="image/png" href="https://kg9n3n8y.github.io/tsukuyomi40_2/icon.png">
     <link rel="apple-touch-icon" sizes="180x180" href="https://kg9n3n8y.github.io/tsukuyomi40_2/icon.png">
     <link rel="stylesheet" href="./style.css">
@@ -24,6 +25,15 @@
   </head>
 
   <body>
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('./sw.js').then(registration => {
+          console.log('ServiceWorker registration successful.');
+        }).catch(err => {
+          console.log('ServiceWorker registration failed.');
+        });
+      }
+    </script>
     <h1>読札アプリ <ruby><rb>月</rb><rp>（</rp><rt>つく</rt><rp>）</rp><rb>読</rb><rp>（</rp><rt>よみ</rt><rp>）</rp></ruby>40(ver.2)</h1>
 
     <p>
